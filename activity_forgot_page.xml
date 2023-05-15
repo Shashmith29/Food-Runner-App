@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5722"
+    tools:context=".ForgotPage">
+    <ImageView
+        android:id="@+id/imgLogo1"
+        android:layout_width="290dp"
+        android:layout_height="150dp"
+        android:src="@drawable/foodrunner2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/txtEnterMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your registered mobile number and email below:"
+        android:textSize="20dp"
+        android:textColor="#fafafa"
+        android:layout_below="@+id/imgLogo1"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number(10 digits)"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="#9e9e9e"
+        android:background="#fafafa"
+        android:layout_below="@+id/txtEnterMobileNumber"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/etMobileNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:maxLength="10"
+        android:textColor="#9e9e9e"
+        android:background="#fafafa"
+        android:layout_below="@+id/etConfirmPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@+id/etMobileNumber2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+
+</RelativeLayout>
